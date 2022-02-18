@@ -23,7 +23,7 @@ module.exports = {
         accessToken: `${process.env.ACCESS_TOKEN}`,
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
