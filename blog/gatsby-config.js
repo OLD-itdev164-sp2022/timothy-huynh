@@ -1,10 +1,10 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`
 });
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Blog`,
+    title: `Come Across`,
     description: `ITDEV-164 Gatsby Blog.`,
     author: `Timothy Huynh`,
     contact: {
@@ -32,6 +32,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
