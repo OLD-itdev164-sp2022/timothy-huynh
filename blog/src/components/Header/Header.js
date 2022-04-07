@@ -25,11 +25,15 @@ const Inner = styled.div`
 const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
+  &:hover {
+    color: purple;
+  }
   margin: 0 10px;
 `
 
 const Image = styled.img`
-  margin: 0;`
+  margin: 0;
+`
 
 const Nav = styled(Flex)`
   flex-direction: row;
@@ -58,7 +62,7 @@ const Header = ({ siteTitle }) => (
             </ThemeConsumer>
         </Section>    
         <Section width={11/12}
-          flex flexDirection= "column" justifyContent="center">
+          flex flexDirection="column" justifyContent="center">
           <Nav>
             <Title>
               <StyledLink to="/">{siteTitle}</StyledLink>
